@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for weight lifting journal",
+  "main": "knexfile.js",
+  "scripts": {
+    "test": "cross-env DB_ENV=testing jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BW-Weight-Lifting-Journal1/Backend.git"
+  },
+  "author": "Malachai Woodiwiss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BW-Weight-Lifting-Journal1/Backend/issues"
+  },
+  "homepage": "https://github.com/BW-Weight-Lifting-Journal1/Backend#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.4",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2"
+  }
+}
