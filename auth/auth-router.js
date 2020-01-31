@@ -31,7 +31,7 @@ router.post("/register", async (req, res, next) => {
           },
           secrets.jwt,
           {
-            expiresIn: "7d"
+            expiresIn: "1d"
           }
         );
   
