@@ -31,12 +31,13 @@ exports.up = function(knex) {
         .notNullable();
       tbl.string("exercise_reps", 255);
       tbl.string("exercise_weight", 255);
-      tbl.string("exercise_target", 255);
+      tbl.string("muscles_targeted", 255);
       tbl.integer('workout_id')
         .unsigned()
         .notNullable()
         .references('id')
-        .inTable('workouts');
+        .inTable('workouts')
+        .onDelete('CASCADE');
       tbl.integer('user_id')
         .unsigned()
         .notNullable()

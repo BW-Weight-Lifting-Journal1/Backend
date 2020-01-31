@@ -4,7 +4,8 @@
   "description": "Backend for weight lifting journal",
   "main": "knexfile.js",
   "scripts": {
-    "test": "cross-env DB_ENV=testing jest --watch"
+    "test": "cross-env DB_ENV=testing jest --watch",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
